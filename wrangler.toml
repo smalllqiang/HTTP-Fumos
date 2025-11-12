@@ -1,7 +1,0 @@
-name = "http-fumos"
-main = "src/index.js"
-compatibility_date = "2025-11-12"
-
-[[kv_namespaces]]
-binding = "fumo_status_images"
-id = "aca796c534e3406ab0adc5c43efbd768"
