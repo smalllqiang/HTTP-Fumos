@@ -6,7 +6,7 @@
 
 ## 使用方法
 
-直接使用 `https://example.com/{status_code}` ，即可得到返回的图像。
+直接使用 `https://http-fumos.top/{status_code}` ，即可得到返回的图像。
 
 ## 为该项目贡献
 
