@@ -1,6 +1,8 @@
 # 其它
 /temp
 /tools/config.py
+test.py
+*.pyc
 
 # Logs
 
