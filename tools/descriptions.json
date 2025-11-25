@@ -1,0 +1,271 @@
+{
+    "100": {
+        "description_en": "Continue",
+        "description_zh": "继续\n客户端应继续其请求"
+    },
+    "101": {
+        "description_en": "Switching Protocols",
+        "description_zh": "切换协议\n服务器根据客户端的请求切换协议"
+    },
+    "102": {
+        "description_en": "Processing",
+        "description_zh": "处理中\n服务器已收到请求\n正在处理但尚未完成"
+    },
+    "103": {
+        "description_en": "Early Hints",
+        "description_zh": "早期提示\n服务器在最终响应前返回一些响应头信息"
+    },
+    "200": { "description_en": "OK", "description_zh": "请求成功" },
+    "201": {
+        "description_en": "Created",
+        "description_zh": "已创建\n请求成功且资源已创建"
+    },
+    "202": {
+        "description_en": "Accepted",
+        "description_zh": "已接受\n请求已接受但未处理完成"
+    },
+    "203": {
+        "description_en": "Non-Authoritative Information",
+        "description_zh": "非授权信息\n返回的信息可能来自第三方"
+    },
+    "204": {
+        "description_en": "No Content",
+        "description_zh": "无内容\n请求成功但无返回内容"
+    },
+    "205": {
+        "description_en": "Reset Content",
+        "description_zh": "重置内容\n要求客户端重置文档视图"
+    },
+    "206": {
+        "description_en": "Partial Content",
+        "description_zh": "部分内容\n服务器返回部分资源内容"
+    },
+    "207": {
+        "description_en": "Multi-Status",
+        "description_zh": "多状态\nWebDAV 请求的多状态响应"
+    },
+    "208": {
+        "description_en": "Already Reported",
+        "description_zh": "已报告\nWebDAV 中响应已发送"
+    },
+    "214": {
+        "description_en": "Unassigned",
+        "description_zh": "未分配状态码"
+    },
+    "226": {
+        "description_en": "IM Used",
+        "description_zh": "使用了 IM\n服务器完成了对资源的请求\n响应是实例操作的结果"
+    },
+    "300": {
+        "description_en": "Multiple Choices",
+        "description_zh": "多种选择\n请求的资源有多个可选版本"
+    },
+    "301": {
+        "description_en": "Moved Permanently",
+        "description_zh": "永久移动\n资源已永久移动到新位置"
+    },
+    "302": {
+        "description_en": "Found",
+        "description_zh": "临时移动\n资源临时从不同位置返回"
+    },
+    "303": {
+        "description_en": "See Other",
+        "description_zh": "查看其他位置\n应使用 GET 访问其他 URI"
+    },
+    "304": {
+        "description_en": "Not Modified",
+        "description_zh": "未修改\n资源自上次请求后未修改"
+    },
+    "305": {
+        "description_en": "Use Proxy",
+        "description_zh": "使用代理\n请求的资源必须通过代理访问"
+    },
+    "307": {
+        "description_en": "Temporary Redirect",
+        "description_zh": "临时重定向\n请求的资源临时从不同位置返回"
+    },
+    "308": {
+        "description_en": "Permanent Redirect",
+        "description_zh": "永久重定向\n请求的资源永久从不同位置返回"
+    },
+    "400": {
+        "description_en": "Bad Request",
+        "description_zh": "错误请求\n请求语法错误或无法解析"
+    },
+    "401": {
+        "description_en": "Unauthorized",
+        "description_zh": "未授权\n请求需要身份验证"
+    },
+    "402": {
+        "description_en": "Payment Required",
+        "description_zh": "需要付款\n保留状态码\n未来可能用于支付"
+    },
+    "403": {
+        "description_en": "Forbidden",
+        "description_zh": "禁止访问\n服务器拒绝执行请求"
+    },
+    "405": {
+        "description_en": "Method Not Allowed",
+        "description_zh": "方法不允许\n请求方法被禁止"
+    },
+    "406": {
+        "description_en": "Not Acceptable",
+        "description_zh": "不可接受\n资源无法满足请求头的条件"
+    },
+    "407": {
+        "description_en": "Proxy Authentication Required",
+        "description_zh": "需要代理认证\n客户端需先通过代理认证"
+    },
+    "408": {
+        "description_en": "Request Timeout",
+        "description_zh": "请求超时\n服务器等待请求超时"
+    },
+    "409": {
+        "description_en": "Conflict",
+        "description_zh": "冲突\n请求与资源当前状态冲突"
+    },
+    "410": {
+        "description_en": "Gone",
+        "description_zh": "已删除\n资源永久不可用"
+    },
+    "411": {
+        "description_en": "Length Required",
+        "description_zh": "需要长度\n请求需要 Content-Length"
+    },
+    "412": {
+        "description_en": "Precondition Failed",
+        "description_zh": "前提条件失败\n请求头的前提条件失败"
+    },
+    "414": {
+        "description_en": "URI Too Long",
+        "description_zh": "URI 过长\n请求的 URI 超过服务器限制"
+    },
+    "415": {
+        "description_en": "Unsupported Media Type",
+        "description_zh": "不支持的媒体类型\n请求格式服务器不支持"
+    },
+    "416": {
+        "description_en": "Range Not Satisfiable",
+        "description_zh": "范围无效\n请求的范围无法满足"
+    },
+    "417": {
+        "description_en": "Expectation Failed",
+        "description_zh": "期望失败\n请求头 Expect 字段无法满足"
+    },
+    "419": {
+        "description_en": "Page Expired",
+        "description_zh": "页面过期"
+    },
+    "420": {
+        "description_en": "Enhance Your Calm",
+        "description_zh": "增强冷静"
+    },
+    "422": {
+        "description_en": "Unprocessable Entity",
+        "description_zh": "无法处理的实体\n请求格式正确但语义错误"
+    },
+    "423": {
+        "description_en": "Locked",
+        "description_zh": "已锁定\n资源被锁定"
+    },
+    "424": {
+        "description_en": "Failed Dependency",
+        "description_zh": "依赖失败\n依赖操作失败"
+    },
+    "425": {
+        "description_en": "Too Early",
+        "description_zh": "太早\n服务器不愿冒险处理重放请求"
+    },
+    "426": {
+        "description_en": "Upgrade Required",
+        "description_zh": "需要升级\n客户端需升级协议"
+    },
+    "428": {
+        "description_en": "Precondition Required",
+        "description_zh": "需要前提条件\n请求需要条件字段"
+    },
+    "429": {
+        "description_en": "Too Many Requests",
+        "description_zh": "请求过多\n客户端限流"
+    },
+    "431": {
+        "description_en": "Request Header Fields Too Large",
+        "description_zh": "请求头字段太大"
+    },
+    "444": {
+        "description_en": "No Response",
+        "description_zh": "无响应"
+    },
+    "450": {
+        "description_en": "Blocked by Windows Parental Controls",
+        "description_zh": "被 Windows 家长控制阻止"
+    },
+    "451": {
+        "description_en": "Unavailable For Legal Reasons",
+        "description_zh": "因法律原因不可用"
+    },
+    "497": {
+        "description_en": "HTTP to HTTPS",
+        "description_zh": "HTTP 请求发送到 HTTPS 端口"
+    },
+    "500": {
+        "description_en": "Internal Server Error",
+        "description_zh": "服务器内部错误"
+    },
+    "501": {
+        "description_en": "Not Implemented",
+        "description_zh": "未实现\n服务器不支持请求方法"
+    },
+    "502": {
+        "description_en": "Bad Gateway",
+        "description_zh": "错误网关\n上游服务器无效响应"
+    },
+    "503": {
+        "description_en": "Service Unavailable",
+        "description_zh": "服务不可用\n服务器暂时过载或维护"
+    },
+    "506": {
+        "description_en": "Variant Also Negotiates",
+        "description_zh": "变体也协商\n服务器配置错误"
+    },
+    "507": {
+        "description_en": "Insufficient Storage",
+        "description_zh": "存储不足\n服务器无法存储完成请求所需内容"
+    },
+    "509": {
+        "description_en": "Bandwidth Limit Exceeded",
+        "description_zh": "带宽超限"
+    },
+    "510": {
+        "description_en": "Not Extended",
+        "description_zh": "未扩展\n请求需要进一步扩展"
+    },
+    "511": {
+        "description_en": "Network Authentication Required",
+        "description_zh": "需要网络认证"
+    },
+    "521": {
+        "description_en": "Web Server Is Down",
+        "description_zh": "Web 服务器宕机"
+    },
+    "522": {
+        "description_en": "Connection Timed Out",
+        "description_zh": "连接超时"
+    },
+    "523": {
+        "description_en": "Origin Is Unreachable",
+        "description_zh": "源站不可达"
+    },
+    "525": {
+        "description_en": "SSL Handshake Failed",
+        "description_zh": "SSL 握手失败"
+    },
+    "530": {
+        "description_en": "Site Frozen",
+        "description_zh": "站点被冻结"
+    },
+    "599": {
+        "description_en": "Network Connect Timeout Error",
+        "description_zh": "网络连接超时错误"
+    }
+}
