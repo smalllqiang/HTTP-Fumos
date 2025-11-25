@@ -3,6 +3,8 @@
 /tools/config.py
 test.py
 *.pyc
+config.mjs
+KV_data.json
 
 # Logs
 
