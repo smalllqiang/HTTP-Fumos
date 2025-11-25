@@ -1,8 +1,10 @@
 import sys
-import shutil
 import exiftool
+from PIL import Image
 from typing import List
 from pathlib import Path
+
+from config import *
 
 def list_files(dest_path: Path) -> List[Path]:
     folder = dest_path
@@ -28,11 +30,31 @@ def strip_imgs(src_files: List[Path], output_dir: Path):
     for img in src_files:
         strip_to_new_file(img, output_dir)
 
+def convert_to_jpeg(files: List[Path], out_dir: Path, *, quality: int = 100, overwrite: bool = False) -> None:
+    out_dir = out_dir.expanduser().resolve()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for src in files:
+        if not src.exists():
+            print(f"跳过不存在文件: {src}", file=sys.stderr)
+            continue
+        dst = out_dir / f"{src.stem}.jpg"
+        if dst.exists() and not overwrite:
+            continue
+        try:
+            with Image.open(src) as im:
+                if im.mode in ("RGBA", "LA", "P"):
+                    rgb_im = Image.new("RGB", im.size, (255, 255, 255))
+                    rgb_im.paste(im, mask=im.split()[-1] if im.mode in ("RGBA", "LA") else None)
+                else:
+                    rgb_im = im.convert("RGB")
+                rgb_im.save(dst, format="JPEG", quality=quality, optimize=True)
+        except Exception as e:
+            print(f"处理失败 {src}: {e}", file=sys.stderr)
+
 if __name__ == "__main__":
-    dest_path = Path("..", "temp", "raw_imgs")
-    EXIFTOOL_EXECUTABLE = r"D:\exiftool-12.98_64\exiftool.exe"
-    output_dir = Path("..", "temp", "no_meta_data_imgs")
-    imgs = list_files(dest_path)
-    # print(imgs)
-    strip_imgs(imgs, output_dir)
+    raw_imgs = list_files(dest_path)
+    strip_imgs(raw_imgs, no_meta_data_imgs_output_dir)
+    no_meta_data_imgs = list_files(no_meta_data_imgs_output_dir)
+    convert_to_jpeg(no_meta_data_imgs, jpeg_imgs)
+
 
