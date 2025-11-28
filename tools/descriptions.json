@@ -152,6 +152,10 @@
         "description_en": "Expectation Failed",
         "description_zh": "期望失败\n请求头 Expect 字段无法满足"
     },
+    "418": {
+        "description_en": "I'm a teapot",
+        "description_zh": "我是茶壶\n服务器拒绝尝试用茶壶冲泡咖啡"
+    },
     "419": {
         "description_en": "Page Expired",
         "description_zh": "页面过期"
@@ -223,6 +227,10 @@
     "503": {
         "description_en": "Service Unavailable",
         "description_zh": "服务不可用\n服务器暂时过载或维护"
+    },
+    "505": {
+        "description_en": "HTTP Version Not Supported",
+        "description_zh": "HTTP版本不受支持\n服务器不支持请求中所用的HTTP协议版本"
     },
     "506": {
         "description_en": "Variant Also Negotiates",
