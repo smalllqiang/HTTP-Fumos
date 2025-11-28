@@ -46,7 +46,7 @@ export const apiToken    = "有 Workers KV 写入权限的api密钥";
     {
         "404": "url"
     }
-}
+]
 ```
 的格式填入你的数据.  
 之后执行`uploadKV.js`.
