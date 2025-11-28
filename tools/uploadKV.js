@@ -1,16 +1,3 @@
-/**
- * 批量上傳 JSON 鍵值對到 Cloudflare Workers KV
- *
- * 使用方法：
- * 1. 在項目根目錄創建 data.json，格式為：
- *    [
- *      {"foo":"bar"},
- *      {"hello":"world"}
- *    ]
- * 2. 修改下面的配置（accountId, namespaceId, apiToken）
- * 3. 執行：node uploadKV.js
- */
-
 import fs from "fs";
 import fetch from "node-fetch";
 import { accountId, namespaceId, apiToken } from "./config.mjs";
