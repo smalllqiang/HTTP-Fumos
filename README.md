@@ -102,5 +102,7 @@
 
 感谢以下对本项目作出贡献的各位:  
 
+- [Flora](https://github.com/Bleakzun)
+- [ItsAyaya](https://github.com/ItsAyaya)
 - [smalllqiang](https://github.com/smalllqiang)
-- [Xiaolang47y]()
+- [Xiaolang47y](https://github.com/Xiaolang47y)
