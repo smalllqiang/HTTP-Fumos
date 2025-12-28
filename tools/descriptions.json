@@ -49,8 +49,8 @@
         "description_zh": "已报告\nWebDAV 中响应已发送"
     },
     "214": {
-        "description_en": "Unassigned",
-        "description_zh": "未分配状态码"
+        "description_en": "Transformation Applied",
+        "description_zh": "已转换\n服务器对资源应用了转换操作"
     },
     "226": {
         "description_en": "IM Used",
