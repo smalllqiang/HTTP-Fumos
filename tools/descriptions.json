@@ -136,6 +136,10 @@
         "description_en": "Precondition Failed",
         "description_zh": "前提条件失败\n请求头的前提条件失败"
     },
+    "413": {
+        "description_en": "Payload Too Large",
+        "description_zh": "请求实体过大\n请求体超过服务器允许的大小"
+    },
     "414": {
         "description_en": "URI Too Long",
         "description_zh": "URI 过长\n请求的 URI 超过服务器限制"
@@ -163,6 +167,10 @@
     "420": {
         "description_en": "Enhance Your Calm",
         "description_zh": "增强冷静"
+    },
+    "421": {
+        "description_en": "Misdirected Request",
+        "description_zh": "错误定向请求\n请求被发送到无法生成响应的服务器"
     },
     "422": {
         "description_en": "Unprocessable Entity",
@@ -208,9 +216,25 @@
         "description_en": "Unavailable For Legal Reasons",
         "description_zh": "因法律原因不可用"
     },
+    "495": {
+        "description_en": "SSL Certificate Error",
+        "description_zh": "SSL 证书错误\n客户端证书验证失败"
+    },
+    "496": {
+        "description_en": "SSL Certificate Required",
+        "description_zh": "需要 SSL 证书\n服务器要求客户端提供证书"
+    },
     "497": {
         "description_en": "HTTP to HTTPS",
         "description_zh": "HTTP 请求发送到 HTTPS 端口"
+    },
+    "498": {
+        "description_en": "Token Expired/Invalid",
+        "description_zh": "令牌过期或无效\n访问令牌已失效或格式错误"
+    },
+    "499": {
+        "description_en": "Client Closed Request",
+        "description_zh": "客户端关闭请求\n客户端在服务器响应前断开连接"
     },
     "500": {
         "description_en": "Internal Server Error",
@@ -228,6 +252,10 @@
         "description_en": "Service Unavailable",
         "description_zh": "服务不可用\n服务器暂时过载或维护"
     },
+    "504": {
+        "description_en": "Gateway Timeout",
+        "description_zh": "网关超时\n上游服务器未及时响应"
+    },
     "505": {
         "description_en": "HTTP Version Not Supported",
         "description_zh": "HTTP版本不受支持\n服务器不支持请求中所用的HTTP协议版本"
@@ -239,6 +267,10 @@
     "507": {
         "description_en": "Insufficient Storage",
         "description_zh": "存储不足\n服务器无法存储完成请求所需内容"
+    },
+    "508": {
+        "description_en": "Loop Detected",
+        "description_zh": "检测到循环\n服务器在处理请求时检测到无限循环"
     },
     "509": {
         "description_en": "Bandwidth Limit Exceeded",
