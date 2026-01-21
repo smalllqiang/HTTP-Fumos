@@ -104,6 +104,10 @@
         "description_en": "Forbidden",
         "description_zh": "禁止访问\n服务器拒绝执行请求"
     },
+    "404": {
+        "description_en": "Not Found",
+        "description_zh": "未找到\n请求的资源不存在"
+    },
     "405": {
         "description_en": "Method Not Allowed",
         "description_zh": "方法不允许\n请求方法被禁止"
