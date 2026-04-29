@@ -6,7 +6,7 @@
 
 ## 使用方法
 
-直接使用 `https://http-fumos.top/{status_code}` 即可得到返回的图像  
+直接`GET` `https://http-fumos.top/{status_code}` 即可得到返回的图像  
 
 ## 目前已有的状态码
 
@@ -107,8 +107,12 @@
 - 大小适度
 - 不侵犯版权
 
-## 贡献者
+## 致谢
 
+### HTTP Cats
+[http.cat](https://http.cat)
+
+### 贡献者
 感谢以下对本项目作出贡献的各位:  
 
 - [Flora](https://github.com/Bleakzun)
