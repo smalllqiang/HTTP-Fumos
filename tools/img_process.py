@@ -92,8 +92,11 @@ def draw_text_center(
 def get_description(status_code: str, description_file_path: Path):
     with open(description_file_path, mode="r", encoding="utf-8") as f:
         data = json.load(f)
-        description = data.get(status_code)
-        return description.get("description_en"), description.get("description_zh")
+        try:
+            description = data.get(status_code)
+            return description.get("description_en"), description.get("description_zh")
+        except AttributeError:
+            return "", ""
 
 
 if __name__ == "__main__":
