@@ -303,6 +303,10 @@
         "description_en": "Origin Is Unreachable",
         "description_zh": "源站不可达"
     },
+    "524": {
+        "description_en": "A Timeout Occurred",
+        "description_zh": "源站服务器连接超时未响应"
+    },
     "525": {
         "description_en": "SSL Handshake Failed",
         "description_zh": "SSL握手失败"
