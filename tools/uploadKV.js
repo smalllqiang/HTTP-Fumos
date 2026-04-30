@@ -2,35 +2,33 @@ import fs from "fs";
 import fetch from "node-fetch";
 import { accountId, namespaceId, apiToken } from "./config.mjs";
 
-// === 讀取 JSON 文件 ===
 const data = JSON.parse(fs.readFileSync("KV_data.json", "utf8"));
 
-// === 上傳函數 ===
 async function uploadKV() {
-  for (const obj of data) {
-    const [key, value] = Object.entries(obj)[0]; // 每個對象只有一個鍵值對
+    for (const obj of data) {
+        const [key, value] = Object.entries(obj)[0]; // 每个对象只有一个键值对
 
-    console.log(`正在上傳: ${key} => ${value}`);
+        console.log(`正在上传: ${key} => ${value}`);
 
-    const res = await fetch(
-      `https://api.cloudflare.com/client/v4/accounts/${accountId}/storage/kv/namespaces/${namespaceId}/values/${encodeURIComponent(key)}`,
-      {
-        method: "PUT",
-        headers: {
-          "Authorization": `Bearer ${apiToken}`,
-          "Content-Type": "text/plain"
-        },
-        body: value
-      }
-    );
+        const res = await fetch(
+            `https://api.cloudflare.com/client/v4/accounts/${accountId}/storage/kv/namespaces/${namespaceId}/values/${encodeURIComponent(key)}`,
+            {
+                method: "PUT",
+                headers: {
+                    Authorization: `Bearer ${apiToken}`,
+                    "Content-Type": "text/plain",
+                },
+                body: value,
+            },
+        );
 
-    const result = await res.json();
-    if (!result.success) {
-      console.error(`❌ 上傳失敗: ${key}`, result.errors);
-    } else {
-      console.log(`✅ 成功: ${key}`);
+        const result = await res.json();
+        if (!result.success) {
+            console.error(`❌ 上传失败: ${key}`, result.errors);
+        } else {
+            console.log(`✅ 成功: ${key}`);
+        }
     }
-  }
 }
 
-uploadKV().catch(err => console.error("程序錯誤:", err));
+uploadKV().catch((err) => console.error("程序错误:", err));
