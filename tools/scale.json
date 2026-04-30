@@ -1,4 +1,74 @@
 {
+    "100.jpg": {
+        "crop": {
+            "top_left": [0, 92],
+            "bottom_right": [499, 426]
+        },
+        "resize": [600, 400]
+    },
+    "101.jpg": {
+        "crop": {
+            "top_left": [0, 20],
+            "bottom_right": [473, 336]
+        },
+        "resize": [600, 400]
+    },
+    "102.jpg": {
+        "crop": {
+            "top_left": [0, 32],
+            "bottom_right": [399, 299]
+        },
+        "resize": [600, 400]
+    },
+    "200.jpg": {
+        "crop": {
+            "top_left": [0, 510],
+            "bottom_right": [1079, 1230]
+        },
+        "resize": [600, 400]
+    },
+    "201.jpg": {
+        "crop": {
+            "top_left": [180, 0],
+            "bottom_right": [1800, 1079]
+        },
+        "resize": [600, 400]
+    },
+    "202.jpg": {
+        "crop": {
+            "top_left": [0, 15],
+            "bottom_right": [319, 229]
+        },
+        "resize": [600, 400]
+    },
+    "203.jpg": {
+        "crop": {
+            "top_left": [0, 36],
+            "bottom_right": [299, 236]
+        },
+        "resize": [600, 400]
+    },
+    "204.jpg": {
+        "crop": {
+            "top_left": [0, 45],
+            "bottom_right": [579, 432]
+        },
+        "resize": [600, 400]
+    },
+    "205.jpg": {
+        "crop": {
+            "top_left": [0, 180],
+            "bottom_right": [579, 567]
+        },
+        "resize": [600, 400]
+    },
+    "214.jpg": {
+        "crop": {
+            "top_left": [0, 149],
+            "bottom_right": [579, 535]
+        },
+        "resize": [600, 400]
+    },
     "404.jpg": {
         "crop": {
             "top_left": [0, 0],
