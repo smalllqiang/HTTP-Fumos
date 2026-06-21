@@ -1,6 +1,6 @@
 from pathlib import Path
 
-raw_dir = Path("raw_imgs")
+raw_dir = Path("croped_imgs")
 output_dir = Path("temp", "output")
 config_path = Path("tools", "scale.json")
 

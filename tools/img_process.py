@@ -96,32 +96,40 @@ def get_description(status_code: str, description_file_path: Path):
             description = data.get(status_code)
             return description.get("description_en"), description.get("description_zh")
         except AttributeError:
+            print(f"ERROR: {status_code} 缺少描述")
             return "", ""
 
 
 if __name__ == "__main__":
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     with open(config_path, "r", encoding="utf-8") as f:
-        config: dict[str, dict] = json.load(f)
-    for image, params in config.items():
+        config: list[str] = json.load(f)
+    for image in config:
         status_code = image[:3]
         image_path = raw_dir / image
         output_path = output_dir / image
+        if output_path.is_file():
+            print(f"INFO: {output_path} 已存在")
+            continue
         description_en, description_zh = get_description(
             status_code, description_file_path
         )
-        with Image.open(image_path) as img:
-            croped_img = crop_img(img, params)
-            b_img = add_border(croped_img, "#000000", 3, 3, 3, 3)
-            w_img = add_border(b_img, "#FFFFFF", 2, 2, 2, 2)
-            b_img = add_border(w_img, "#000000", 45, 160, 70, 70)
-            t_img = draw_text_center(
-                b_img, status_code, 450, status_code_font, 60, "#FFFFFF"
-            )
-            t_img = draw_text_center(
-                t_img, description_en, 520, description_en_font, 30, "#FFFFFF"
-            )
-            t_img = draw_text_center(
-                t_img, description_zh, 560, description_zh_font, 30, "#FFFFFF"
-            )
-            t_img.save(output_path)
+        try:
+            with Image.open(image_path) as img:
+                # croped_img = crop_img(img, params)
+                b_img = add_border(img, "#000000", 3, 3, 3, 3)
+                w_img = add_border(b_img, "#FFFFFF", 2, 2, 2, 2)
+                b_img = add_border(w_img, "#000000", 45, 160, 70, 70)
+                t_img = draw_text_center(
+                    b_img, status_code, 450, status_code_font, 60, "#FFFFFF"
+                )
+                t_img = draw_text_center(
+                    t_img, description_en, 520, description_en_font, 30, "#FFFFFF"
+                )
+                t_img = draw_text_center(
+                    t_img, description_zh, 560, description_zh_font, 30, "#FFFFFF"
+                )
+                t_img.save(output_path)
+                print(f"INFO: {output_path} 已生成")
+        except FileNotFoundError:
+            print(f"ERROR: {image_path} 不存在")
