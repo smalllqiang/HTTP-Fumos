@@ -55,6 +55,10 @@
         "description_en": "Transformation Applied",
         "description_zh": "服务器对资源应用了转换操作"
     },
+    "218": {
+        "description_en": "This is fine",
+        "description_zh": "一切正常"
+    },
     "226": {
         "description_en": "IM Used",
         "description_zh": "服务器完成了对资源的请求且响应是实例操作的结果"
