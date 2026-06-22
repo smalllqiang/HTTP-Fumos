@@ -105,7 +105,7 @@
     },
     "402": {
         "description_en": "Payment Required",
-        "description_zh": "保留状态码未来可能用于支付"
+        "description_zh": "保留状态码　未来可能用于支付"
     },
     "403": {
         "description_en": "Forbidden",
