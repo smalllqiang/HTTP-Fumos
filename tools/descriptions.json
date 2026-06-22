@@ -61,7 +61,7 @@
     },
     "226": {
         "description_en": "IM Used",
-        "description_zh": "服务器完成了对资源的请求且响应是实例操作的结果"
+        "description_zh": "请求完成且响应为实例操作结果"
     },
     "300": {
         "description_en": "Multiple Choices",
