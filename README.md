@@ -6,9 +6,9 @@
 
 ## 使用方法
 
-> `https://http-fumos.top/[status_code]`
-
-如果需要一个后缀名, 在最后加 `.jpg` 即可.
+<s>`https://http-fumos.top/[status_code](.jpg|)`</s>  
+因为作者是穷鬼, 域名弃用了.  
+如果真的需要, 请用 `https://http-fumos.smalllqiang.workers.dev/[status_code](.jpg|)` 或 `https://raw.githubusercontent.com/smalllqiang/HTTP-Fumos/refs/heads/master/imgs/[status_code].jpg` 吧.
 
 ## 目前已有的状态码
 
